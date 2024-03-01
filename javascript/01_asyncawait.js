@@ -79,19 +79,62 @@
 
 // workflow function
 
-const getAllUserEmails = async () => {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users");
-    const jsonUserData = await response.json();
-    
-    const userEmailArray = jsonUserData.map(user => {
-        return user.email;
+        /* const getAllUserEmails = async () => {
+            const response = await fetch("https://jsonplaceholder.typicode.com/users");
+            const jsonUserData = await response.json();
+            
+            const userEmailArray = jsonUserData.map(user => {
+                return user.email;
+            });
+
+            postToWebPage(userEmailArray);
+        }
+
+        const postToWebPage = (data) => {
+            console.log(data);
+        }
+
+        getAllUserEmails(); */
+
+// second parameter of fetch is an object
+
+        /* const getDadJoke = async () => {
+            const response = await fetch("https://icanhazdadjoke.com/", {
+                method: "GET",
+                headers: {
+                    Accept: "application/json"
+                    // change to "text/plain"
+                }
+            });
+                const jsonJokeData = await response.json();
+                            // change to response.text();
+            
+                console.log(jsonJokeData);
+        } 
+
+        getDadJoke(); */
+
+// post
+
+const jokeObject = {
+    id: "RZv4h3gV0g",
+    joke: "Is the pool safe for diving? It deep ends."
+}
+
+const postData = async (jokeObj) => {
+    // fetch should include https:// bin api
+    const response = await fetch("/data/01_data.json", {
+        method: "POST",
+        headers: {
+            Accept: "application/json"
+            // change to "text/plain"
+        },
+        body: JSON.stringify(jokeObj)
     });
-
-    postToWebPage(userEmailArray);
+        const jsonResponse = await response.json();
+                    // change to response.text();
+    
+        console.log(jsonResponse);
 }
 
-const postToWebPage = (data) => {
-    console.log(data);
-}
-
-getAllUserEmails();
+postData(jokeObject);
