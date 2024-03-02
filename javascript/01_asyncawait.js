@@ -116,25 +116,25 @@
 
 // post
 
-const jokeObject = {
-    id: "RZv4h3gV0g",
-    joke: "Is the pool safe for diving? It deep ends."
-}
+            /* const jokeObject = {
+                id: "RZv4h3gV0g",
+                joke: "Is the pool safe for diving? It deep ends."
+            }
 
-const postData = async (jokeObj) => {
-    // fetch should include https:// bin api
-    const response = await fetch("/data/01_data.json", {
-        method: "POST",
-        headers: {
-            Accept: "application/json"
-            // change to "text/plain"
-        },
-        body: JSON.stringify(jokeObj)
-    });
-        const jsonResponse = await response.json();
-                    // change to response.text();
-    
-        console.log(jsonResponse);
-}
+            const postData = async (jokeObj) => {
+                // fetch should include https:// bin api
+                const response = await fetch("/data/01_data.json", {
+                    method: "POST",
+                    headers: {
+                        Accept: "application/json"
+                        // change to "text/plain"
+                    },
+                    body: JSON.stringify(jokeObj)
+                });
+                    const jsonResponse = await response.json();
+                                // change to response.text();
+                
+                    console.log(jsonResponse);
+            }
 
-postData(jokeObject);
+            postData(jokeObject); */
