@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+    width: 50vw;
+}
+
+h1 {
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+}
+
+img {
+    width: 70vw;
+}
