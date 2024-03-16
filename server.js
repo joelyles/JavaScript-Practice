@@ -7,6 +7,7 @@ const port = 3500;
 const fsPromises = require('fs').promises;
 const path = require('path');
 const { logger } = require('./middleware/logEvents');
+const errorHandler = require('./middleware/logErr');
 
 server.use(logger);
 
@@ -22,5 +23,7 @@ server.get('^/$|/index(.html)?', (req, res) => {
 server.get('/about(.html)?', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'about.html'))
 });
+
+server.use(errorHandler);
 
 server.listen(port, () => console.log(`practice server running on port ${port}`));
