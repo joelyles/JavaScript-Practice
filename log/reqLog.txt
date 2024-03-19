@@ -146,3 +146,10 @@
 20240318	05:48:17	36cd2a1f-61c4-4c4a-86a8-55a70cbf6961	GET	undefined	/index
 20240318	05:48:17	95b87e5d-e247-4d50-9d1b-c5bd1bf54e64	GET	undefined	/stylesheets/stylesheet.css
 20240318	05:48:17	688af74e-6e7d-4227-98f1-7e2103111b9c	GET	undefined	/images/peter-pryharski-unsplash.jpg
+20240319	05:10:13	973cf771-65a2-4487-8700-391559cec7f6	POST	undefined	/employees
+20240319	05:10:49	3733df50-d8ce-448d-85dc-4485cf7829e5	GET	undefined	/employees
+20240319	05:13:18	1f970e73-b2d6-40ec-976e-0075abdb8fb8	GET	undefined	/employees
+20240319	05:14:42	910b4062-f0bd-40f6-888f-24cbe6e994e3	GET	undefined	/employees
+20240319	05:18:53	37f95550-add9-45a1-8032-2d9a62b7c955	GET	undefined	/employees
+20240319	05:20:14	0ca12e88-6e3f-4596-87f6-70463c2a3e34	GET	undefined	/employees
+20240319	05:21:11	982ac623-5d72-4479-bbfa-06d99d900370	GET	undefined	/employees

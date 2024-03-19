@@ -7,12 +7,13 @@ const port = 3500;
 const fsPromises = require('fs').promises;
 const path = require('path');
 const cors = require('cors');
+const corsOptions = require('./config/corsOptions');
 const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/logErr');
 
 server.use(logger);
 
-server.use(cors());
+server.use(cors(corsOptions));
 
 // middleware conventions
 server.use(express.urlencoded({ extended: false }));
