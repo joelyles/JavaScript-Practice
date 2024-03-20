@@ -165,3 +165,15 @@
 20240320	04:57:42	9e353e25-9ab7-4b1d-8f40-a892613ac3ba	GET	undefined	/stylesheets/stylesheet.css
 20240320	04:57:42	9dfed3e0-dc9f-4ba8-8a9d-f380b23a1d76	GET	undefined	/images/peter-pryharski-unsplash.jpg
 20240320	04:57:56	3002b08f-05af-4dd3-9a37-1d3e2c1973a0	GET	undefined	/employees
+20240320	05:11:48	ed87227a-6feb-4776-b01d-5c857189ec39	POST	undefined	/employees
+20240320	05:24:30	bbcc957b-d053-4d97-870e-eb05148bf7ac	PUT	undefined	/employees
+20240320	05:24:46	5ea8daf2-0c16-4d3e-b104-35187d4f54d6	PUT	undefined	/employees
+20240320	05:25:04	976838df-f988-4c4c-bb2c-792e6d229279	POST	undefined	/employees
+20240320	05:37:03	15ebdd8f-a00e-4b48-aa27-f6cb08ceb332	DELETE	undefined	/employees
+20240320	05:37:34	805d5014-6442-483c-ba80-49829c667b24	DELETE	undefined	/employees
+20240320	05:41:42	e805a560-2d52-42f4-b438-beae47787ed6	GET	undefined	/employees
+20240320	05:45:35	4ee8c993-a379-4f07-917d-fd3f383c35e2	POST	undefined	/employees
+20240320	05:45:40	e037697d-b2c7-4dea-af73-426819f05e99	POST	undefined	/employees
+20240320	05:46:06	925d4c19-4811-4e55-b207-ca2e56838f01	DELETE	undefined	/employees
+20240320	05:46:13	45dea39c-a7a1-439e-9bfb-59a3a4c337c5	DELETE	undefined	/employees
+20240320	05:46:28	4b4b662f-851e-4f7f-af50-58fdf0013647	GET	undefined	/employees/2
