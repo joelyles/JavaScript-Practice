@@ -1,7 +1,7 @@
 // practice server using mostly Dave Gray node tutorial and original documentation (express, mdm, etc.)
 
 const express = require('express');
-const server = express();
+const app = express();
 const router = express.Router();
 const port = 3500;
 const fsPromises = require('fs').promises;
@@ -11,17 +11,18 @@ const corsOptions = require('./config/corsOptions');
 const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/logErr');
 
-server.use(logger);
+app.use(logger);
 
-server.use(cors(corsOptions));
+app.use(cors(corsOptions));
 
 // middleware conventions
-server.use(express.urlencoded({ extended: false }));
-server.use(express.json());
-server.use(express.static(path.join(__dirname, '/public')));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.static(path.join(__dirname, '/public')));
 
-server.use(require('./routes/root'));
+app.use(require('./routes/root'));
+app.use('/employees', require('./routes/api/employees'));
 
-server.use(errorHandler);
+app.use(errorHandler);
 
-server.listen(port, () => console.log(`practice server running on port ${port}`));
+app.listen(port, () => console.log(`practice server running on port ${port}`));
