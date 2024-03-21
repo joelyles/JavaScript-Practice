@@ -177,3 +177,6 @@
 20240320	05:46:06	925d4c19-4811-4e55-b207-ca2e56838f01	DELETE	undefined	/employees
 20240320	05:46:13	45dea39c-a7a1-439e-9bfb-59a3a4c337c5	DELETE	undefined	/employees
 20240320	05:46:28	4b4b662f-851e-4f7f-af50-58fdf0013647	GET	undefined	/employees/2
+20240321	05:36:13	96ff7b0d-4cf0-466e-98a5-e8e855e26111	POST	undefined	/register
+20240321	05:38:34	5aac6ed2-07e1-4725-aa0e-14d176c724dd	POST	undefined	/register
+20240321	05:39:14	6180a3fe-bed7-4724-8557-cd3a9fd9ac5f	POST	undefined	/register
