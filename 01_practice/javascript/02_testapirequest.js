@@ -10,6 +10,9 @@ const callSwapi = async () => {
     const peopleArray = jsonSwapiData.results.map(results => {
         return results.name;
     });
+// lines 14 and 15 - ByteGrad GET Data From API & Display youtube video
+    const addList = `<li>${peopleArray[0]}<li>`;
+    document.querySelector('.new-list').insertAdjacentHTML('beforeend', addList);
 
     console.log(peopleArray);
 }
