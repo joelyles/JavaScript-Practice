@@ -11,9 +11,23 @@ const callSwapi = async () => {
         return results.name;
     });
 // lines 14 and 15 - ByteGrad GET Data From API & Display youtube video
-    const addList = `<li>${peopleArray[0]}<li>`;
-    document.querySelector('.new-list').insertAdjacentHTML('beforeend', addList);
+//    const addList = `<li>${peopleArray[randomNum]}</li>`;
+//    document.querySelector('.new-list').insertAdjacentHTML('beforeend', addList);
 
+/* for (i = 0; i < 10; i++){
+    let myNum = i;
+    console.log(myNum);
+} */
+    /* const jsonSwapiPlanet = await response.json(); */
+    const planetArray = jsonSwapiData.results.map(results => {
+        return results.birth_year;
+    })
+
+for ( i = 0; i < 10; i++) {
+        let myNum = i;
+        const addList = `<li>${peopleArray[myNum]}'s birth year is ${planetArray[myNum]}</li> \b`;
+        document.querySelector('.new-list').insertAdjacentHTML('beforeend', addList);
+    }
     console.log(peopleArray);
 }
 
