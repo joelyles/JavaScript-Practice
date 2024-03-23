@@ -19,24 +19,39 @@ const callSwapi = async () => {
     console.log(myNum);
 } */
     /* const jsonSwapiPlanet = await response.json(); */
-    const planetArray = jsonSwapiData.results.map(results => {
+    const birthYear = jsonSwapiData.results.map(results => {
         return results.birth_year;
     })
 
-for ( i = 0; i < 10; i++) {
+
+
+for ( i = 0; i < peopleArray.length; i++) {
+        const input = document.querySelector('.input');
+        const submit = document.querySelector('.submit');
         let myNum = i;
-        const addList = `<li>${peopleArray[myNum]}'s birth year is ${planetArray[myNum]}</li> \b`;
+        const addList = `<li>${peopleArray[myNum]}'s birth year is ${birthYear[myNum]}</li> \b`;
         document.querySelector('.new-list').insertAdjacentHTML('beforeend', addList);
-    }
+
+/*     submit.addEventListener('click', function() {
+    
+        if (input.value === peopleArray[myNum]){
+            console.log(yes);
+        }
+        console.log(input.value);
+    }); */
+}
     console.log(peopleArray);
 }
 
 callSwapi();
 
-/*  const retSwapi = async () => {
-    data = await callSwapi();
-    swapiData.swapiList = data;
-    container.innerHTML = JSON.stringify(data);
-}
+/* const input = document.querySelector('.input');
+const submit = document.querySelector('.submit');
 
-retSwapi(); */
+submit.addEventListener('click', () => {
+    
+    if (input.value.toString() === birthYear[myNum]){
+        console.log(yes);
+    }
+    console.log(input.value.toString());
+}); */
